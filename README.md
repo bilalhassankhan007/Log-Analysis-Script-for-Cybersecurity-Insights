@@ -37,9 +37,9 @@ The script identifies which endpoint (e.g., /home, /login, /dashboard) was acces
 
 # Code Logic:
 
-# Use a regular expression to extract endpoints from log entries.
-# Use a dictionary to count the frequency of each endpoint.
-# Identify the endpoint with the highest access count.
+# • Use a regular expression to extract endpoints from log entries.
+# • Use a dictionary to count the frequency of each endpoint.
+# • Identify the endpoint with the highest access count.
 
 # Sample Output:
 Most Frequently Accessed Endpoint:
@@ -49,9 +49,9 @@ Most Frequently Accessed Endpoint:
 The script detects potential brute-force login attempts by identifying IP addresses that have failed login attempts (HTTP 401 status or "Invalid credentials") exceeding a configurable threshold (default: 10).
 
 # Code logic 
-# Use a regular expression to identify failed login attempts.
-# Count the number of failed attempts per IP address.
-# Filter IPs exceeding the threshold and flag them as suspicious
+# • Use a regular expression to identify failed login attempts.
+# • Count the number of failed attempts per IP address.
+# • Filter IPs exceeding the threshold and flag them as suspicious
 
 # Sample Output :
 Suspicious Activity Detected:
@@ -62,10 +62,10 @@ IP Address           Failed Login Attempts
 # 4) Output Results to a CSV File
 The script saves the analysis results in a well-organized CSV file (log_analysis_results.csv) with three sections:
 
-# Requests per IP
-# Most Frequently Accessed Endpoint
-# Suspicious Activity Detected
-# CSV Strcurure
+# • Requests per IP
+# • Most Frequently Accessed Endpoint
+# • Suspicious Activity Detected
+# • CSV Strcurure
 "Requests per IP"
 "IP Address", "Request Count"
 "192.168.1.1", 7
